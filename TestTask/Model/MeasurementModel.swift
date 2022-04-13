@@ -8,14 +8,13 @@
 import Foundation
 
 struct MeasurementModel: Codable {
-    let time: Date = Date()
     let name: String
     let measurements: [[Measurement]]
     let id: String
     let unit: String?
 
     enum CodingKeys: String, CodingKey {
-        case name, measurements, time
+        case name, measurements
         case id = "_id"
         case unit
     }

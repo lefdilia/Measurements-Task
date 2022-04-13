@@ -80,7 +80,7 @@ class MeasurementsTableViewCell: UITableViewCell {
         }()
         
         if let time = measurement[0].name as? Double {
-            measurementTimeLabel.attributedText = NSAttributedString(string: time.toReadable(format: "MM-dd-yyyy HH:mm:ss"),attributes: [
+            measurementTimeLabel.attributedText = NSAttributedString(string: time.toReadable(format: "MM-dd-yyyy HH:mm:ss"), attributes: [
                 .font: UIFont(name: Theme.CentryGothicRegular, size: 14)!,
                 .foregroundColor: UIColor.black ])
         }
